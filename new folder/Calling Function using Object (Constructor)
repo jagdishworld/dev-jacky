@@ -1,0 +1,33 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        
+        //creating object with parameter from Ganit class
+        Ganit num = new Ganit(5,2);
+        
+        //calling function using object from Ganit Class
+        int y = num.add();
+        
+        //printing output
+        System.out.println(y); 
+    }
+ 
+}
+//creating new class outside main class
+class Ganit {
+    //define instance variables
+    int a; int b;
+    
+    //define constructor so that this class will able to create objects
+    //constructor name must be same as name of class
+    public Ganit(int x, int y){
+        this.a = x;
+        this.b = y;
+    }
+    
+    //defining method
+    public int add(){
+        int c = a+b;
+        return c;
+    }
+    
+}
